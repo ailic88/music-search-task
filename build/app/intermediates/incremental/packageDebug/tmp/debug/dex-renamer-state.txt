@@ -1,0 +1,4 @@
+#Fri Jul 23 14:55:27 CEST 2021
+base.0=/Users/aleksandarilic/StudioProjects/music_search_task/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

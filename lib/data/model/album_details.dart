@@ -57,7 +57,7 @@ class Wiki {
 
 class Track {
   String artistName;
-  int duration;
+  int? duration;
   String name;
 
   Track({required this.artistName, required this.duration, required this.name});

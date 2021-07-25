@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/example/music_search_task/BuildConfig.java
- com.example.music_search_task.BuildConfig

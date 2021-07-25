@@ -44,7 +44,12 @@ class _AlbumDetailsPageState extends State<AlbumDetailsPage> {
             if (state is AlbumDetailsLoadedState) {
               return _AlbumDetailsWidget(albumDetails: state.albumDetails);
             } else if (state is AlbumsErrorState) {
-              return CommunicationWidget(state.message);
+              return Center(
+                child: Text(
+                  state.message,
+                  style: TextStyleDesignToken.bodyLg(),
+                ),
+              );
             } else {
               return Center(child: CircularProgressIndicator());
             }
@@ -141,7 +146,11 @@ class _TrackListItem extends StatelessWidget {
           Icon(Icons.play_circle_outline),
           const SizedBox(width: 8),
           Expanded(child: Text(track.name, style: TextStyleDesignToken.titleSm())),
-          Text(formattedSongDuration(Duration(seconds: track.duration))),
+          Text(
+            track.duration != null
+                ? formattedSongDuration(Duration(seconds: track.duration!))
+                : "0:00",
+          ),
         ],
       ),
     );
